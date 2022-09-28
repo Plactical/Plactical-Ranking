@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
 
-const NormalWinnerBox = ({studentId, userName, clearTime, index}) =>{
+const NormalWinnerBox = ({studentId, userName, clearTime, key}) =>{
 
     useEffect(() =>{
         console.log("studentId : "+ studentId);
         console.log("clearTime : "+ clearTime);
-        console.log("index : "+ index);
+        console.log("index : "+ key);
     },[])
 
     return(

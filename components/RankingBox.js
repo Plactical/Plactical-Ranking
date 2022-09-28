@@ -32,20 +32,12 @@ const RankingBox = () =>{
         setUser(data)
     }, [])
 
-    const readRanking = () => {
-
-        for(let i = 0 ; i < user.length; i++)
-        {
-            <NormalWinnerBox studentId={user[i].studentId} userName={user[i].userName} clearTime={user[i].clearTime} index={i}/>
-        }
-    }
-
     return(
         <div className={"w-96 h-2/3 top-5 bottom-5 bg-white m-auto shadow-2xl flex flex-col overflow-y-scroll"}>
             <span className={"text-center font-bold text-4xl mt-5"}>랭킹</span>
             <div>
                 {user.map( (data, index) => {
-                    return (<NormalWinnerBox studentId={data.studentId} userName={data.userName} clearTime={data.clearTime} index={index + 1}/>);
+                    return (<NormalWinnerBox studentId={data.studentId} userName={data.userName} clearTime={data.clearTime} key={index + 1}/>);
                 })}
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import {useRouter} from "next/router";
 import RankingBox from "../components/RankingBox";
 
-const ranking = () =>{
+const Ranking = () =>{
     const router = useRouter();
     const {studentId, userName} = router.query;
     return(
@@ -12,4 +12,4 @@ const ranking = () =>{
     );
 }
 
-export default ranking;
+export default Ranking;
