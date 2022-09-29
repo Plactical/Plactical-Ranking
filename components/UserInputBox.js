@@ -36,7 +36,7 @@ const UserInputBox = () => {
                     studentId: JSON.stringify(studentId),
                     userName: JSON.stringify(userName)
                 }
-            }}>
+            }} >
                 <button className={"border w-max h-max mx-auto mt-4 text-center py-2 px-4 rounded-lg transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white"}
                 >
                     접속하기

@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && touch out/.nojekyll"
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "next": "12.3.1",
+    "next-images": "^1.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -20,5 +22,6 @@
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "homepage": "https://Plactical.github.io/Platical-Ranking"
 }

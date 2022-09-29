@@ -33,13 +33,23 @@ const RankingBox = () =>{
     }, [])
 
     return(
-        <div className={"w-96 h-2/3 top-5 bottom-5 bg-white m-auto shadow-2xl flex flex-col overflow-y-scroll"}>
-            <span className={"text-center font-bold text-4xl mt-5"}>랭킹</span>
-            <div>
-                {user.map( (data, index) => {
-                    return (<NormalWinnerBox studentId={data.studentId} userName={data.userName} clearTime={data.clearTime} key={index + 1}/>);
-                })}
-            </div>
+        <div className={"h-2/3 top-5 bottom-5 bg-white m-auto shadow-2xl flex flex-col overflow-y-scroll"} style={{width: "768px"}}>
+            <span className={"text-center font-bold text-4xl my-5"}>랭킹</span>
+            <table className={"table-auto mx-2 border-gray-300 drop-shadow-md shadow-md"}>
+                <thead >
+                    <tr className={"bg-blue-500 text-white font-normal text-xl"}>
+                        <th>등수</th>
+                        <th>학번</th>
+                        <th>기록</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {user.map( (data, index) => {
+                        return (<NormalWinnerBox studentId={data.studentId} userName={data.userName} clearTime={data.clearTime} index={index + 1}/>);
+                    })}
+                </tbody>
+            </table>
+
         </div>
     );
 }
