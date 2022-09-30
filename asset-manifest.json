@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Plactical-Ranking/static/css/main.144113de.css",
+    "main.js": "/Plactical-Ranking/static/js/main.60161c09.js",
+    "index.html": "/Plactical-Ranking/index.html",
+    "main.144113de.css.map": "/Plactical-Ranking/static/css/main.144113de.css.map",
+    "main.60161c09.js.map": "/Plactical-Ranking/static/js/main.60161c09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.144113de.css",
+    "static/js/main.60161c09.js"
+  ]
+}
