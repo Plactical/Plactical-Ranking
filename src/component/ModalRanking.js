@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+    import React, {useEffect, useRef, useState} from "react";
 import axios from "axios";
 
 const ModalRanking = (props) => {
@@ -13,7 +13,7 @@ const ModalRanking = (props) => {
     },[props.isOpen])
 
     const onClick = () =>{
-        axios.post('http://plactical.iptime.org:8081/api/find-user',{
+        axios.post(process.env.REACT_APP_API_URL+'/find-user',{
             studentId : studentId
         })
             .then((res) =>{

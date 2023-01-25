@@ -1,14 +1,14 @@
 import React, {useEffect} from "react";
 
-const NormalWinnerBox = ({studentId, clearTime, userMajor, index}) =>{
+const NormalWinnerBox = ({name, clearTime, score, index}) =>{
 
     const firstRanking = () =>{
         return (
             <>
                 <tr className={"text-center text-4xl font-bold"}>
                     <td><span className={""}>{"🥇"+index + "등"}</span></td>
-                    <td>{studentId}</td>
-                    <td className={"text-3xl"}>{userMajor}</td>
+                    <td>{name}</td>
+                    <td className={"text-3xl"}>{score}</td>
                     <td>{clearTime}</td>
                 </tr>
             </>
@@ -20,8 +20,8 @@ const NormalWinnerBox = ({studentId, clearTime, userMajor, index}) =>{
             <>
                 <tr className={"text-center text-3xl font-bold"}>
                     <td><span className={""}>{"🥈"+index + "등"}</span></td>
-                    <td>{studentId}</td>
-                    <td className={"text-2xl"}>{userMajor}</td>
+                    <td>{name}</td>
+                    <td className={"text-2xl"}>{score}</td>
                     <td>{clearTime}</td>
                 </tr>
             </>
@@ -33,8 +33,8 @@ const NormalWinnerBox = ({studentId, clearTime, userMajor, index}) =>{
             <>
                 <tr className={"text-center text-2xl font-bold"}>
                     <td><span className={""}>{"🥉"+index + "등"}</span></td>
-                    <td>{studentId}</td>
-                    <td className={"text-xl"}>{userMajor}</td>
+                    <td>{name}</td>
+                    <td className={"text-xl"}>{score}</td>
                     <td>{clearTime}</td>
                 </tr>
             </>
@@ -59,8 +59,8 @@ const NormalWinnerBox = ({studentId, clearTime, userMajor, index}) =>{
             return (
                 <tr className={"text-center text-xl font-bold"}>
                     <td>{ "🏅"+index + "등"}</td>
-                    <td>{studentId}</td>
-                    <td className={"text-md"}>{userMajor}</td>
+                    <td>{name}</td>
+                    <td className={"text-md"}>{score}</td>
                     <td>{clearTime}</td>
                 </tr>
             )
@@ -69,8 +69,8 @@ const NormalWinnerBox = ({studentId, clearTime, userMajor, index}) =>{
             return (
                 <tr className={"text-center text-xl font-bold"}>
                     <td>{ index + "등"}</td>
-                    <td>{studentId}</td>
-                    <td className={"text-md"}>{userMajor}</td>
+                    <td>{name}</td>
+                    <td className={"text-md"}>{score}</td>
                     <td>{clearTime}</td>
                 </tr>
             )
