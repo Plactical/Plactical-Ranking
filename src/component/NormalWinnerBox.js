@@ -9,7 +9,7 @@ const NormalWinnerBox = ({name, clearTime, score, index}) =>{
                     <td><span className={""}>{"🥇"+index + "등"}</span></td>
                     <td>{name}</td>
                     <td className={"text-3xl"}>{score}</td>
-                    <td>{clearTime}</td>
+                    {/*<td>{clearTime}</td>*/}
                 </tr>
             </>
         )
@@ -22,7 +22,7 @@ const NormalWinnerBox = ({name, clearTime, score, index}) =>{
                     <td><span className={""}>{"🥈"+index + "등"}</span></td>
                     <td>{name}</td>
                     <td className={"text-2xl"}>{score}</td>
-                    <td>{clearTime}</td>
+                    {/*<td>{clearTime}</td>*/}
                 </tr>
             </>
         )
@@ -35,7 +35,7 @@ const NormalWinnerBox = ({name, clearTime, score, index}) =>{
                     <td><span className={""}>{"🥉"+index + "등"}</span></td>
                     <td>{name}</td>
                     <td className={"text-xl"}>{score}</td>
-                    <td>{clearTime}</td>
+                    {/*<td>{clearTime}</td>*/}
                 </tr>
             </>
         )
@@ -61,7 +61,7 @@ const NormalWinnerBox = ({name, clearTime, score, index}) =>{
                     <td>{ "🏅"+index + "등"}</td>
                     <td>{name}</td>
                     <td className={"text-md"}>{score}</td>
-                    <td>{clearTime}</td>
+                    {/*<td>{clearTime}</td>*/}
                 </tr>
             )
         }
@@ -71,7 +71,7 @@ const NormalWinnerBox = ({name, clearTime, score, index}) =>{
                     <td>{ index + "등"}</td>
                     <td>{name}</td>
                     <td className={"text-md"}>{score}</td>
-                    <td>{clearTime}</td>
+                    {/*<td>{clearTime}</td>*/}
                 </tr>
             )
         }
