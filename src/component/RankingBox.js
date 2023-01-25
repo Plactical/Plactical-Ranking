@@ -9,7 +9,7 @@ const RankingBox = () =>{
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() =>{
-        axios.post('http://plactical.iptime.org:8081/api/all-data')
+        axios.post(process.env.REACT_APP_API_URL + "/find-data")
             .then((res) =>{
                 console.log("실행함");
                 setUser(res.data);
@@ -21,7 +21,7 @@ const RankingBox = () =>{
 
     useEffect(() =>{
         setInterval(() =>{
-            axios.post('http://plactical.iptime.org:8081/api/all-data')
+            axios.post(process.env.REACT_APP_API_URL + "/find-data")
                 .then((res) =>{
                     console.log("실행함");
                     setUser(res.data);
